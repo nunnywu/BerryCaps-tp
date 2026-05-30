@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>BerryCaps.ar | Keycaps Artesanales e Importadas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/img/logo-pixel.png" alt="Logo BerryCaps" class="logo-img">
+            </a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#productos" class="dropbtn">Productos ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="importadas.html">Importadas</a></li>
+                        <li><a href="artesanales.html">Artesanales (Arcilla)</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="titulo">Usa tu teclado con <br>personalidad</h2>
+                <p>Keycaps premium, diseños pixel art y piezas únicas modeladas a mano en arcilla polimérica para tu setup.</p>
+                <a href="#productos" class="btn-primary">Ver Catálogo</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/img/TecladoMiku.webp" alt="Teclado mecánico con keycaps personalizadas pastel">
+            </div>
+        </section>
+
+        <section class="productos">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="productos-grid">
+                
+                <article class="card">
+                    <img src="assets/img/Osito.webp" alt="Keycap artesanal diseño conejo blanco pixelado" loading="lazy">
+                    <div class="card-info">
+                        <h3>Keycap "Osito" (Arcilla)</h3>
+                        <p class="precio">$6.000 ARS</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/img/Mimikyu.webp" alt="Keycap Mimikyu" loading="lazy">
+                    <div class="card-info">
+                        <h3>Keycap "Mimikyu" (Artesanal)</h3>
+                        <p class="precio">$7.000 ARS</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/img/Teclado Blanco.webp" alt="Set Keycaps Blanco" loading="lazy">
+                    <div class="card-info">
+                        <h3>Set keycaps Contour Blanco</h3>
+                        <p class="precio">$52.000 ARS</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/img/Sakura.webp" alt="Set keycaps Sakura" loading="lazy">
+                    <div class="card-info">
+                        <h3>Set Keycaps Sakura</h3>
+                        <p class="precio">$57.000 ARS</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/img/patito.webp" alt="Keycap Patito" loading="lazy">
+                    <div class="card-info">
+                        <h3>Keycap Patito (Artesanal)</h3>
+                        <p class="precio">$6.000 ARS</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="assets/img/Cyberpunk.webp" alt="Set Keycaps Cyberpunk" loading="lazy">
+                    <div class="card-info">
+                        <h3>Set Keycaps Cyberpunk</h3>
+                        <p class="precio">$57.000 ARS</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria">
+            <h2 class="section-title">Galería de Setups</h2>
+            <div class="galeria-flex">
+                <div class="galeria-item">
+                    <img src="assets/img/Cliente1.jpg" alt="Setup de cliente 1" loading="lazy">
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/Cliente2.jpg" alt="Setup de cliente 2" loading="lazy">
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/Cliente3.jpg" alt="Setup de cliente 3" loading="lazy">
+                </div>
+                <div class="galeria-item">
+                    <img src="assets/img/Cliente4.jpg" alt="Setup de cliente 4" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2 class="section-title">¡Armemos tu diseño!</h2>
+            <form id="contact-form" class="formulario">
+                <div class="form-group">
+                    <label for="nombre">Nombre o Nickname:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Cuéntanos tu idea (colores, perfil, estilo):</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu consulta aquí..."></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 BerryCaps.ar - Hecho con ❤️ y arcilla polimérica.</p>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+                <a href="https://github.com/nunnywu" target="_blank">GitHub del Proyecto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
